@@ -1,15 +1,8 @@
 {
-  "entrypoint": "index.html",
-  "shell": "src/my-app.html",
-  "fragments": [
-    "src/my-view1.html",
-    "src/my-view2.html",
-    "src/my-view3.html",
-    "src/my-view404.html"
-  ],
+  "entrypoint": "index-simplest.html",
+  "shell": "src/my-app-simplest.html",
   "sources": [
     "index-simplest.html",
-    "src/**/*",
     "images/**/*",
     "bower.json"
   ],
@@ -19,5 +12,22 @@
   ],
   "lint": {
     "rules": ["polymer-2"]
-  }
+  },
+  "builds": [{
+    "name": "bundled",
+    "bundle": true,
+    "js": {"minify": true},
+    "css": {"minify": true},
+    "html": {"minify": true}
+  },{
+    "name": "minified",
+    "js": {"minify": true},
+    "css": {"minify": true},
+    "html": {"minify": true}
+  },{
+    "name": "plain",
+    "js": {"minify": false},
+    "css": {"minify": false},
+    "html": {"minify": false}
+  }]
 }
