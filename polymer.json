@@ -1,8 +1,8 @@
 {
-  "entrypoint": "index-simplest.html",
+  "entrypoint": "index.html",
   "shell": "src/my-app-simplest.html",
   "sources": [
-    "index-simplest.html",
+    "index.html",
     "images/**/*",
     "bower.json"
   ],
