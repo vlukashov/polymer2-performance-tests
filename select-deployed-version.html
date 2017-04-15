@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>Polymer 2 Performance Tests</title>
+    <meta name="description" content="Polymer 2 Performance Tests">
+
+    <!-- Add any global styles for body, document, etc. -->
+    <style>
+      body {
+        margin: 0;
+        line-height: 1.5;
+        min-height: 100vh;
+        padding: 10vh 20vw 0 20vw;
+        box-sizing: border-box;
+      }
+
+      body::before, body::after {
+        display: table-row;
+        content: "";
+      }
+
+      dt {
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Polymer 2 Performance Tests</h1>
+    <h2>Select one of the deployment options below</h2>
+    <dl>
+      <dt><a href="plain">plain</a></dt>
+      <dd>the web page source are deployed "as-is" (no minification, no bundling)</dd>
+      <dt><a href="minified">minified</a></dt>
+      <dd>all css, js and html sources are minified (but not bundling)</dd>
+      <dt><a href="bundled">bundled</a></dt>
+      <dd>all css, js and html sources are minified and bundled</dd>
+    </dl>
+  </body>
+</html>
